@@ -40,7 +40,7 @@ namespace MSTesting
         public void GivenImproperClassname_SoReturnNoSuchClass()
         { 
             object expected = new MoodAnalyser();
-            object obj = MoodAnalyzerFactory.CreateMoodAnalyser("MoodAnalzer.MoodAnalyser", "MoodAnalyser");
+            object obj = MoodAnalyzerFactory.CreateMoodAnalyser("MoodAnazer.MoodAnalyser", "MoodAnalyser");
             string actual = obj.ToString();
             Assert.AreEqual("MoodAnalyzer.MoodAnalyzerCustomException: No such Class", actual);
         }
